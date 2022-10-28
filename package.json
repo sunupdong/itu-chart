@@ -8,7 +8,8 @@
     "test": "jest --coverage",
     "test-live": "cross-env DEBUG_MODE=1 jest --coverage",
     "lint": "eslint --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "ci": "run-s lint test build"
   },
   "keywords": [
     "chart"
@@ -37,5 +38,8 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
+  },
+  "dependencies": {
+    "pnpm": "^7.14.0"
   }
 }

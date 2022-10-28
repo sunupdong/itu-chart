@@ -15,10 +15,14 @@ specifiers:
   jest-electron: ^0.1.12
   lint-staged: ^13.0.3
   npm-run-all: ^4.1.5
+  pnpm: ^7.14.0
   rimraf: ^3.0.2
   rollup: ^3.2.3
   rollup-plugin-babel: ^4.4.0
   rollup-plugin-node-resolve: ^5.2.0
+
+dependencies:
+  pnpm: 7.14.0
 
 devDependencies:
   '@babel/cli': 7.19.3_@babel+core@7.19.6
@@ -6552,6 +6556,12 @@ packages:
   /pn/1.1.0:
     resolution: {integrity: sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==}
     dev: true
+
+  /pnpm/7.14.0:
+    resolution: {integrity: sha512-yUKSckJLBIw8ByqMKJF9497kzwrevuQhdL6o2eYbky7woAictxoGX9veBdQYCdBemuC239X2FJq/LGTpCjQ55w==}
+    engines: {node: '>=14.6'}
+    hasBin: true
+    dev: false
 
   /posix-character-classes/0.1.1:
     resolution: {integrity: sha512-xTgYBc3fuo7Yt7JbiuFxSYGToMoz8fLoE6TC9Wx1P/u+LfeThMOAqmuyECnlBaaJb+u1m9hHiXUEtwW4OzfUJg==}

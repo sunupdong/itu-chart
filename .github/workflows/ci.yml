@@ -27,5 +27,5 @@ jobs:
 
       - name: Run ci
         run: |
-          npm install
-          npm run ci
+          pnpm install
+          pnpm run ci
