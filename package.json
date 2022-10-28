@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf -rf ./dist ./lib ./esm && rollup --config",
+    "build": "rimraf -rf ./dist ./lib ./esm && rollup --config --bundleConfigAsCjs",
     "test": "jest --coverage",
     "test-live": "cross-env DEBUG_MODE=1 jest --coverage",
     "lint": "eslint --fix",
