@@ -26,3 +26,12 @@ export function angle([x, y]) {
   const theta = Math.atan2(y, x);
   return theta;
 }
+
+export function degree(radian) {
+  return (radian * 180) / Math.PI;
+}
+
+export function unique(points, x = (d) => d[0], y = (d) => d[1]) {
+  const overlap = (a, b) => closeTo(x(a), x(b)) && closeTo(y(a), y(b));
+  return points.filter((d, index) => points.findIndex((p) => overlap(d, p)) === index);
+}
